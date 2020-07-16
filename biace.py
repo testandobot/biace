@@ -21,7 +21,7 @@ class MyStreamListener(tweepy.StreamListener):
                 if not foi:
                     api.update_status("Concordo @BiaceLucas", in_reply_to_status=status.id, auto_populate_metadata=True)                
                 else:
-                    api.update_status("@BiaceLucas @BiaceLucas sempre cirúrgico", in_reply_to_status=status.id)
+                    api.update_status("Sempre cirúrgico @BiaceLucas", in_reply_to_status=status.id)
                 foi = not foi    
                 api.create_favorite(status.id)
                 api.retweet(status.id)
